@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>abdulxay.com - Mening Blogim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>abdulxay.com</header>
+  <nav class="site-nav">
+    <a href="#">Bosh sahifa</a>
+    <a href="#">Maqolalar</a>
+    <a href="#">Men haqimda</a>
+    <a href="#">Aloqa</a>
+  </nav>
+
+  <main class="container">
+    <div class="profile-area">
+      <img class="profile-img" src="https://suret.pics/uploads/posts/2023-09/1695315341_1.jpg" alt="Profil rasmi">
+      <div class="profile-text">
+        <h1>abdulxay</h1>
+        <p class="subtitle">Frontend / Blogger</p>
+      </div>
+    </div>
+
+    <section class="posts">
+      <article class="post">
+        <h2>Birinchi maqola sarlavhasi</h2>
+        <p>Bu yerda sizning blog post matningiz bo'ladi. Hozircha namunaviy matn. Siz bu faylni o'zgartirib o'z postlaringizni qo'shishingiz mumkin.</p>
+        <a class="read-more" href="#">Ko'proq o'qish →</a>
+      </article>
+
+      <article class="post">
+        <h2>Ikkinchi maqola</h2>
+        <p>Ikkinchi post namunasi. Har bir maqola alohida tag yoki sahifaga olib borishi uchun <code>href</code> joyini o'zgartiring.</p>
+        <a class="read-more" href="#">Ko'proq o'qish →</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> abdulxay.com — Barcha huquqlar himoyalangan</p>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple demo: open "Ko'proq o'qish" to show alert (replace with real page later)
+    document.querySelectorAll('.read-more').forEach(function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        alert("Maqola sahifasi hali yaratilmagan. index.html faylni tahrirlash orqali qo'shing.");
+      })
+    });
+  </script>
+</body>
+</html>
